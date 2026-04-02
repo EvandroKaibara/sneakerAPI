@@ -16,5 +16,8 @@ public class Sneaker {
     private String name;
     private Integer size;
     private Float price;
+    private String color;
+    private String image;
+    @Enumerated(EnumType.STRING)
     private BrandType brand;
 }

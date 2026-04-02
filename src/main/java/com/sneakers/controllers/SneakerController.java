@@ -13,13 +13,13 @@ public class SneakerController {
     @Autowired
     private SneakerService sneakerService;
 
-    //Endpoint: http://localhost:5432/sneakers
+    //Endpoint: http://localhost:8081/sneakers
     @GetMapping
     public ResponseEntity<List<Sneaker>> getAllSneakers(){
         return ResponseEntity.ok(sneakerService.listAllSneakers());
     }
 
-    //Endpoint: http://localhost:5432/sneakers
+    //Endpoint: http://localhost:8081/sneakers
     @PostMapping
     public ResponseEntity<String> postSneaker(@RequestBody Sneaker sneaker){
         sneakerService.createSneaker(sneaker);

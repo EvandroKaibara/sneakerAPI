@@ -24,13 +24,6 @@ public class SneakerService {
     }
 
     public Sneaker createSneaker(Sneaker sneaker){
-        try{
-            sneakerRepository.save(sneaker);
-            System.out.println("Registro criado com sucesso!");
-        } catch (Exception e){
-            System.out.println(e);
-        }
-
-        return sneaker;
+        return sneakerRepository.save(sneaker);
     }
 }

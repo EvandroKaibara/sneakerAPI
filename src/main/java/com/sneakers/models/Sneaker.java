@@ -16,4 +16,5 @@ public class Sneaker {
     private String name;
     private Integer size;
     private Float price;
+    private BrandType brand;
 }
